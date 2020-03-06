@@ -5,4 +5,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="btn_login">#3F51B5</color>
     <color name="btn_register">#26A8EC</color>
+    <color name="btn_text_color">#E7EBED</color>
 </resources>
