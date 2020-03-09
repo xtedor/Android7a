@@ -3,10 +3,13 @@
     <string name="lbl_fname">Firstname</string>
     <string name="lbl_lname">Lastname</string>
     <string name="hint_fname">Peter</string>
-    <string name="lbl_email">Email</string>
     <string name="lbl_password">Password</string>
+    v
+    <string name="txt_password">Password</string>
     <string name="btn_Signin">Sign in</string>
     <string name="btn_Signup">Sign up</string>
     <string name="txt_loginbar">Login</string>
+    <string name="lbl_email">Email</string>
+    <string name="txt_email">sander@gmail.com</string>
 
 </resources>

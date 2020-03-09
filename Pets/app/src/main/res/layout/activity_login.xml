@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:layout_margin="24dp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -31,6 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="@string/txt_email"
             android:inputType="textPersonName" />
 
         <TextView
@@ -44,17 +46,33 @@
             android:id="@+id/editText13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
             android:ems="10"
+            android:hint="@string/txt_password"
             android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="15dp"
             android:background="@color/btn_login"
             android:onClick="Btn_Login"
-            android:text="@string/btn_Signin" />
+            android:text="@string/btn_Signin"
+            android:textColor="@color/btn_login2"
+            />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@color/btn_Signup"
+            android:onClick="Btn_Signup"
+            android:text="@string/btn_Signup"
+            android:textColor="@color/btn_login2"
+            tools:text="@string/btn_Signup" />
+
 
     </LinearLayout>
 </RelativeLayout>

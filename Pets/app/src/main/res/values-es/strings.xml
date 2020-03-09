@@ -4,9 +4,13 @@
     <string name="lbl_fname">Nombres</string>
     <string name="lbl_lname">Apellidos</string>
     <string name="hint_fname">Peter</string>
-    <string name="lbl_email">Correo</string>
+    <string name="lbl_email">Email</string>
+    <string name="txt_password">Contraseña</string>
+    <string name="txt_email">sander@gmail.com</string>
     <string name="lbl_password">Contraseña</string>
     <string name="btn_Signup">ingresar</string>
     <string name="btn_Signin">registrarse</string>
     <string name="txt_loginbar">iniciosesion</string>
+
+
 </resources>

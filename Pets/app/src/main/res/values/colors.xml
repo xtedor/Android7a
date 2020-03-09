@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="btn_login">#3F51B5</color>
+    <color name="btn_Signup">#03A9F4</color>
+    <color name="btn_Signin">#6EB5DA</color>
     <color name="btn_register">#26A8EC</color>
     <color name="btn_text_color">#E7EBED</color>
+    <color name="btn_login2">#D2E9F4</color>
+
 </resources>
