@@ -26,10 +26,13 @@
                 android:textSize="24sp" />
 
             <SeekBar
-                android:id="@+id/seekBar4"
+                android:id="@+id/sbrRed"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:max="255"
+                android:min="0"
+                android:progress="0" />
         </LinearLayout>
 
         <LinearLayout
@@ -46,10 +49,13 @@
                 android:textSize="24sp" />
 
             <SeekBar
-                android:id="@+id/seekBar5"
+                android:id="@+id/sbrGreen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:min="0"
+                android:max="255"
+                android:progress="0"/>
         </LinearLayout>
 
         <LinearLayout
@@ -66,10 +72,13 @@
                 android:textSize="24sp" />
 
             <SeekBar
-                android:id="@+id/seekBar6"
+                android:id="@+id/sbrBlue"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:min="0"
+                android:max="255"
+                android:progress="0"/>
         </LinearLayout>
 
         <LinearLayout
@@ -86,23 +95,32 @@
                 android:textSize="24sp" />
 
             <SeekBar
-                android:id="@+id/seekBar7"
+                android:id="@+id/sbrAlpha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:min="0"
+                android:max="255"
+                android:progress="0"/>
         </LinearLayout>
 
-        <LinearLayout
+        
+
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:background="@drawable/forest">
 
-            <ImageView
-                android:id="@+id/imageView"
+            <View
+                android:id="@+id/vieColors"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/paint" />
-        </LinearLayout>
+                android:layout_height="match_parent"
+                android:background="#80808080">
+
+            </View>
+
+
+        </FrameLayout>
 
     </LinearLayout>
 
