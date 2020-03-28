@@ -5,5 +5,23 @@
     <string name="lbl_green">Green</string>
     <string name="lbl_blue">Blue</string>
     <string name="lbl_alpha">Alpha</string>
+    <!-- Options menus Labels -->
+    <string name="lblOp_Transparent">Transparent</string>
+    <string name="lblOp_SemiTransparent">SemiTransparent</string>
+    <string name="lblOp_Opaque">Opaque</string>
+    <string name="lblOp_Black">Black</string>
+    <string name="lblOp_White">White</string>
+    <string name="lblOp_Red">Red</string>
+    <string name="lblOp_Alpha">Alpha</string>
+    <string name="lblOp_Cyan">Cyan</string>
+    <string name="lblOp_Green">Green</string>
+    <string name="lblOp_Blue">Blue</string>
+    <string name="lblOp_Magenta">Magenta</string>
+    <string name="lblOp_Yellow">Yellow</string>
+    <string name="lblOp_Reset">Reset</string>
+    <string name="lblOp_AboutOf">About Of</string>
+
+
+
 
 </resources>
