@@ -5,6 +5,7 @@
     <item android:id="@+id/iteSemiTrans" android:title="@string/lblOp_SemiTransparent"/>
     <item android:id="@+id/iteOpaque" android:title="@string/lblOp_Opaque"/>
     <item android:id="@+id/iteBlack" android:title="@string/lblOp_Black"/>
+    <item android:id="@+id/iteWhite" android:title="white"/>
     <item android:id="@+id/iteRed" android:title="@string/lblOp_Red"/>
     <item android:id="@+id/iteGreen" android:title="@string/lblOp_Green"/>
     <item android:id="@+id/iteBlue" android:title="@string/lblOp_Blue"/>
