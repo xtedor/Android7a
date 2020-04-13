@@ -3,6 +3,7 @@ package com.example.colors;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -25,6 +26,8 @@ public class PaletteActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_palette);
+
+        // variables de la interfaz grafica
 
         vRed = findViewById(R.id.sbrRed);
         vGreen = findViewById(R.id.sbrGreen);
@@ -59,35 +62,81 @@ public class PaletteActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
+            //mueve los seekbar segun el boton que se presione para cambiar el color
             case R.id.iteTranparent:
-                Toast.makeText(this,"this color is going to change",Toast.LENGTH_SHORT);
+                vAlpha.setProgress(0);
+                //Toast.makeText(this,"this color is going to change",Toast.LENGTH_SHORT);
                 break;
             case R.id.iteSemiTrans:
-                //code para cambiar color
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteOpaque:
+                vAlpha.setProgress(255);
                 break;
             case R.id.iteBlack:
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
                 break;
             case R.id.iteWhite:
+                vRed.setProgress(255);
+                vGreen.setProgress(255);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteReset:
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(0);
                 break;
             case R.id.iteAlpha:
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(255);
                 break;
             case R.id.iteAboutof:
+                //va a la activity about of... donde hay info de la aplicacion
+                Intent intent=new Intent(this,AboutActivity.class); //instancia del origen al destino
+                //comienza la actividad
+                startActivity(intent);
                 break;
             case R.id.iteBlue:
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteCyan:
+                vRed.setProgress(0);
+                vGreen.setProgress(255);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteGreen:
+                vRed.setProgress(0);
+                vGreen.setProgress(255);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteMagenta:
+                vRed.setProgress(255);
+                vGreen.setProgress(0);
+                vBlue.setProgress(255);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteRed:
+                vRed.setProgress(255);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
             case R.id.iteYellow:
+                vRed.setProgress(255);
+                vGreen.setProgress(255);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(128);
                 break;
 
         }
