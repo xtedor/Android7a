@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item android:id="@+id/icHelp"
+          android:title="@string/lblOp_Help"
+          android:icon="@drawable/ic_help"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/icTransparent"
+        android:title="@string/lblOp_Transparent"
+        android:icon="@drawable/ic_transparent"
+        app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/iteTranparent" android:title="@string/lblOp_Transparent"/>
     <item android:id="@+id/iteSemiTrans" android:title="@string/lblOp_SemiTransparent"/>

@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -42,6 +43,11 @@ public class PaletteActivity extends AppCompatActivity
         vAlpha.setOnSeekBarChangeListener(this);
 
 
+        //MOSTRAR CUANDO tengo presionado el componente
+        registerForContextMenu(vFilter);
+
+
+
 
 
 
@@ -62,6 +68,16 @@ public class PaletteActivity extends AppCompatActivity
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
+
+            case R.id.icHelp:
+                Toast.makeText(this,"U have been preesed HELP ICON",Toast.LENGTH_SHORT);
+                break;
+            case R.id.icTransparent:
+                Toast.makeText(this,"U have been preesed transparent ICON",Toast.LENGTH_SHORT);
+                break;
+
+
+
             //mueve los seekbar segun el boton que se presione para cambiar el color
             case R.id.iteTranparent:
                 vAlpha.setProgress(0);
@@ -143,7 +159,29 @@ public class PaletteActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-        //este metodo notifica cuando sel seek bar esta cambiando
+
+//""""""""""""" Menu contextual """"""""""""""""""""
+
+//mostrar el menu conext
+    @Override
+    public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
+        MenuInflater inflater2= getMenuInflater();
+        inflater2.inflate(R.menu.menu2,menu);
+        super.onCreateContextMenu(menu, v, menuInfo);
+    }
+
+    @Override
+    public boolean onContextItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.itHelp:
+                Toast.makeText(this, "U have been preesed HELP ICON", Toast.LENGTH_SHORT);
+                break;
+        }
+        return super.onContextItemSelected(item);
+    }
+
+    //este metodo notifica cuando sel seek bar esta cambiando
     @Override
     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
         //coger los valores del seekbar
