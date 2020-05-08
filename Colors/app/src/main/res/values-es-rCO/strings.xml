@@ -2,22 +2,22 @@
 <resources>
     <string name="app_name">Colores</string>
     <string name="lblOp_Red">Rojo</string>
-    <string name="lblOp_Green">verde</string>
-    <string name="lblOp_Blue">azul</string>
-    <string name="lblOp_Magenta">magenta</string>
-    <string name="lblOp_Yellow">amarillo</string>
-    <string name="lblOp_Reset">restablecer</string>
-    <string name="lblOp_AboutOf">acerca de</string>
-    <string name="lblOp_Black">negro</string>
-    <string name="lblOp_Opaque">opaco</string>
+    <string name="lblOp_Green">Verde</string>
+    <string name="lblOp_Blue">Azul</string>
+    <string name="lblOp_Magenta">Magenta</string>
+    <string name="lblOp_Yellow">Amarillo</string>
+    <string name="lblOp_Reset">Restablecer</string>
+    <string name="lblOp_AboutOf">Acerca de</string>
+    <string name="lblOp_Black">Negro</string>
+    <string name="lblOp_Opaque">Ppaco</string>
     <string name="lblOp_SemiTransparent">SemiTransparente</string>
     <string name="lblOp_Transparent">Transparente</string>
     <string name="lblOp_Alpha">Alpha</string>
-    <string name="lbl_red">lblrojo</string>
-    <string name="lbl_green">lblverde</string>
-    <string name="lbl_blue">lblazul</string>
-    <string name="lbl_alpha">lblalpha</string>
-    <string name="lblOp_White">blanco</string>
+    <string name="lbl_red">ROJO</string>
+    <string name="lbl_green">VERDE</string>
+    <string name="lbl_blue">AZUL</string>
+    <string name="lbl_alpha">ALPHA</string>
+    <string name="lblOp_White">Blanco</string>
     <string name="lblOp_Cyan">Cyan</string>
 
     <string name="lblOp_Help">Help</string>

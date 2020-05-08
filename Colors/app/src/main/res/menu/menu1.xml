@@ -6,26 +6,39 @@
     <item android:id="@+id/icHelp"
           android:title="@string/lblOp_Help"
           android:icon="@drawable/ic_help"
-        app:showAsAction="ifRoom"/>
+          app:showAsAction="ifRoom"/>
+
 
     <item android:id="@+id/icTransparent"
         android:title="@string/lblOp_Transparent"
         android:icon="@drawable/ic_transparent"
         app:showAsAction="ifRoom"/>
 
-    <item android:id="@+id/iteTranparent" android:title="@string/lblOp_Transparent"/>
-    <item android:id="@+id/iteSemiTrans" android:title="@string/lblOp_SemiTransparent"/>
-    <item android:id="@+id/iteOpaque" android:title="@string/lblOp_Opaque"/>
-    <item android:id="@+id/iteBlack" android:title="@string/lblOp_Black"/>
-    <item android:id="@+id/iteWhite" android:title="white"/>
-    <item android:id="@+id/iteRed" android:title="@string/lblOp_Red"/>
-    <item android:id="@+id/iteGreen" android:title="@string/lblOp_Green"/>
-    <item android:id="@+id/iteBlue" android:title="@string/lblOp_Blue"/>
-    <item android:id="@+id/iteCyan" android:title="@string/lblOp_Cyan"/>
-    <item android:id="@+id/iteAlpha" android:title="@string/lblOp_Alpha"/>
-    <item android:id="@+id/iteMagenta" android:title="@string/lblOp_Magenta"/>
-    <item android:id="@+id/iteReset" android:title="@string/lblOp_Reset"/>
-    <item android:id="@+id/iteAboutof" android:title="@string/lblOp_AboutOf"/>
-    <item android:id="@+id/iteYellow" android:title="@string/lblOp_Yellow"/>
+    <item   android:id="@+id/Colors"
+        android:title="Colors">
+        <menu>
+            <item android:id="@+id/iteTranparent" android:title="@string/lblOp_Transparent"/>
+            <item android:id="@+id/iteSemiTrans" android:title="@string/lblOp_SemiTransparent"/>
+            <item android:id="@+id/iteOpaque" android:title="@string/lblOp_Opaque"/>
+            <item android:id="@+id/iteBlack" android:title="@string/lblOp_Black"/>
+            <item android:id="@+id/iteWhite" android:title="White"/>
+            <item android:id="@+id/iteRed" android:title="@string/lblOp_Red"/>
+            <item android:id="@+id/iteGreen" android:title="@string/lblOp_Green"/>
+            <item android:id="@+id/iteBlue" android:title="@string/lblOp_Blue"/>
+            <item android:id="@+id/iteCyan" android:title="@string/lblOp_Cyan"/>
+            <item android:id="@+id/iteAlpha" android:title="@string/lblOp_Alpha"/>
+            <item android:id="@+id/iteMagenta" android:title="@string/lblOp_Magenta"/>
+            <item android:id="@+id/iteYellow" android:title="@string/lblOp_Yellow"/>
+        </menu>
+    </item>
+
+    <item   android:id="@+id/itReset"
+        android:title="Reset"/>
+    <item   android:id="@+id/itAboutof"
+        android:title="About Of"/>
+    <item   android:id="@+id/itCloseApp"
+        android:title="Close app"/>
+
+
 
 </menu>

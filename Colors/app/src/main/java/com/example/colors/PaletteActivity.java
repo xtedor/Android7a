@@ -51,6 +51,8 @@ public class PaletteActivity extends AppCompatActivity
 
 
 
+
+
     }
     //""""""""""""" MENUS""""""""""""""""""""
     //Metodo de mostrar menu en el celular
@@ -70,14 +72,30 @@ public class PaletteActivity extends AppCompatActivity
         switch (item.getItemId()){
 
             case R.id.icHelp:
+                Intent intent2=new Intent(this,HelpActivity.class); //instancia del origen al destino
+                startActivity(intent2);
                 Toast.makeText(this,"U have been preesed HELP ICON",Toast.LENGTH_SHORT);
                 break;
             case R.id.icTransparent:
+                vAlpha.setProgress(0);
                 Toast.makeText(this,"U have been preesed transparent ICON",Toast.LENGTH_SHORT);
                 break;
-
-
-
+            case R.id.itReset:
+                Toast.makeText(this,"U have been preesed Reset ICON",Toast.LENGTH_SHORT);
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(0);
+                break;
+            case R.id.itAboutof:
+                //va a la activity about of... donde hay info de la aplicacion
+                Intent intent3=new Intent(this,AboutActivity.class); //instancia del origen al destino
+                //comienza la actividad
+                startActivity(intent3);
+                break;
+            case R.id.itCloseApp:
+                System.exit(0);
+                break;
             //mueve los seekbar segun el boton que se presione para cambiar el color
             case R.id.iteTranparent:
                 vAlpha.setProgress(0);
@@ -112,12 +130,7 @@ public class PaletteActivity extends AppCompatActivity
                 vBlue.setProgress(0);
                 vAlpha.setProgress(255);
                 break;
-            case R.id.iteAboutof:
-                //va a la activity about of... donde hay info de la aplicacion
-                Intent intent=new Intent(this,AboutActivity.class); //instancia del origen al destino
-                //comienza la actividad
-                startActivity(intent);
-                break;
+
             case R.id.iteBlue:
                 vRed.setProgress(0);
                 vGreen.setProgress(0);
@@ -162,7 +175,7 @@ public class PaletteActivity extends AppCompatActivity
 
 //""""""""""""" Menu contextual """"""""""""""""""""
 
-//mostrar el menu conext
+//mostrar el menu context
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         MenuInflater inflater2= getMenuInflater();
@@ -174,8 +187,17 @@ public class PaletteActivity extends AppCompatActivity
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
 
-            case R.id.itHelp:
+            case R.id.icHelp:
+                Intent intent=new Intent(this,HelpActivity.class);
+                startActivity(intent);
                 Toast.makeText(this, "U have been preesed HELP ICON", Toast.LENGTH_SHORT);
+                break;
+            case R.id.iteReset:
+                Toast.makeText(this, "U have been preesed reset icon", Toast.LENGTH_SHORT);
+                vRed.setProgress(0);
+                vGreen.setProgress(0);
+                vBlue.setProgress(0);
+                vAlpha.setProgress(0);
                 break;
         }
         return super.onContextItemSelected(item);
