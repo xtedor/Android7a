@@ -9,7 +9,7 @@
     <string name="lblOp_Reset">Restablecer</string>
     <string name="lblOp_AboutOf">Acerca de</string>
     <string name="lblOp_Black">Negro</string>
-    <string name="lblOp_Opaque">Ppaco</string>
+    <string name="lblOp_Opaque">Opaco</string>
     <string name="lblOp_SemiTransparent">SemiTransparente</string>
     <string name="lblOp_Transparent">Transparente</string>
     <string name="lblOp_Alpha">Alpha</string>

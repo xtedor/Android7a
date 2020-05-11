@@ -187,7 +187,7 @@ public class PaletteActivity extends AppCompatActivity
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
 
-            case R.id.icHelp:
+            case R.id.iteHelp:
                 Intent intent=new Intent(this,HelpActivity.class);
                 startActivity(intent);
                 Toast.makeText(this, "U have been preesed HELP ICON", Toast.LENGTH_SHORT);
