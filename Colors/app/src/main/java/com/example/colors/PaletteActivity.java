@@ -12,6 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.SeekBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class PaletteActivity extends AppCompatActivity
@@ -22,6 +23,12 @@ public class PaletteActivity extends AppCompatActivity
     private SeekBar vBlue = null;
     private SeekBar vAlpha = null;
     private View vFilter = null;
+
+
+    private TextView tred = null;
+    private TextView tblue  = null;
+    private TextView tgreen = null;
+    private TextView talpha = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +42,11 @@ public class PaletteActivity extends AppCompatActivity
         vBlue = findViewById(R.id.sbrBlue);
         vAlpha = findViewById(R.id.sbrAlpha);
         vFilter = findViewById(R.id.vieColors);
+
+        tred= findViewById(R.id.txtred);
+        tblue= findViewById(R.id.txtblue);
+        tgreen= findViewById(R.id.txtgreen);
+        talpha= findViewById(R.id.txtalpha);
 
 
         vRed.setOnSeekBarChangeListener(this);
@@ -211,6 +223,13 @@ public class PaletteActivity extends AppCompatActivity
         int g = vGreen.getProgress();
         int b = vBlue.getProgress();
         int a = vAlpha.getProgress();
+
+          tred.setText(""+r);
+          tblue.setText(""+b);
+          tgreen.setText(""+g);
+          talpha.setText(""+a);
+
+
 
         //convertir los valores del seekbar
         int filtercolor= Color.argb(a,r,g,b); //mandar primero alhpa,red,green,blue en orden

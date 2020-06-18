@@ -6,9 +6,8 @@
 
     </item>
     <item   android:id="@+id/iteReset"
-        android:icon="@drawable/ic_reset_menu"
+            android:icon="@drawable/ic_reset_menu"
             android:title="Reset">
-
     </item>
 
 </menu>

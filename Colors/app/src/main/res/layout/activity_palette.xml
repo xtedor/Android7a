@@ -33,6 +33,14 @@
                 android:max="255"
                 android:min="0"
                 android:progress="0" />
+
+            <TextView
+                android:id="@+id/txtred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="24sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -56,6 +64,14 @@
                 android:min="0"
                 android:max="255"
                 android:progress="0"/>
+
+            <TextView
+                android:id="@+id/txtgreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="24sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -79,6 +95,14 @@
                 android:min="0"
                 android:max="255"
                 android:progress="0"/>
+
+            <TextView
+                android:id="@+id/txtblue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="24sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -102,6 +126,14 @@
                 android:min="0"
                 android:max="255"
                 android:progress="0"/>
+
+            <TextView
+                android:id="@+id/txtalpha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textSize="24sp" />
         </LinearLayout>
 
         

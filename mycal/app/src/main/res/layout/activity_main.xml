@@ -11,31 +11,29 @@
         android:layout_height="match_parent"
         android:background="#000000"
         android:orientation="vertical"
-        android:padding="13dp"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:padding="13dp">
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            android:layout_gravity="end"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="22dp"
             android:text="0"
-            android:textAlignment="viewEnd"
             android:textColor="#FFFFFF"
-            android:textSize="100dp" />
+            android:textSize="100dp"
+            android:layout_marginRight="22dp"
+            android:layout_gravity="end"
+            android:textAlignment="viewEnd"/>
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:gravity="center_horizontal"
             android:layout_gravity="center"
-            android:layout_margin="13dp"
-            android:layout_marginStart="13dp"
             android:layout_marginLeft="13dp"
             android:layout_marginTop="15dp"
-            android:gravity="center_horizontal">
+            android:layout_margin="13dp"
+            android:layout_marginStart="13dp">
 
 
             <TableRow

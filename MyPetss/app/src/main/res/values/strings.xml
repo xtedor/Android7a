@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyPetss</string>
+
+    <!--login activity-->
+    <string name="ht_text_username">usuario</string>
+
+</resources>
